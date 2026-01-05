@@ -1,2 +1,9 @@
 /venv
+
+# To activate virtual environment:
+# - pyenv-win-venv activate venv
+
 *.code-workspace
+*ps1
+
+.python-version
