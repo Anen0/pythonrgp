@@ -1,6 +1,6 @@
 /venv
 
-# To activate virtual environment:
+# To activate virtual environment: switch to Pyhton ver. 3.8.10
 # - pyenv-win-venv activate venv
 
 *.code-workspace
