@@ -6,4 +6,5 @@
 *.code-workspace
 *ps1
 
+/__pycache__
 .python-version

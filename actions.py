@@ -2,6 +2,7 @@ class Action:
     pass
 
 class EscapeAction(Action):
+    print("\n\nESCAPE\n\n")
     pass
 
 class MovementAction(Action):
