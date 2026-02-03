@@ -16,9 +16,9 @@ class EventHandler(tcod.event.EventDispatch[Action]):
             action = MovementAction(dx=0, dy=-1)
         elif key == tcod.event.KeySym.DOWN:
             action = MovementAction(dx=0, dy=1)
-        elif key == tcod.event.KeySym.RIGHT:
+        elif key == tcod.event.K_RIGHT:
             action = MovementAction(dx=1, dy=0)
-        elif key == tcod.event.KeySym.LEFT:
+        elif key == tcod.event.K_LEFT:
             action = MovementAction(dx=-1, dy=0)
 
         elif key == tcod.event.KeySym.ESCAPE:

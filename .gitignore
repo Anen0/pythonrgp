@@ -1,5 +1,7 @@
 /venv
 
+***/__pycache__
+
 # To activate virtual environment: switch to Pyhton ver. 3.8.10
 # - pyenv-win-venv activate venv
 

@@ -4,17 +4,14 @@ from actions import EscapeAction, MovementAction
 from input_handlers import EventHandler
 
 def main():
-    # screen_width = 80
-    # screen_height = 50
-    screen_width = 40
-    screen_height = 15
+    screen_width = 80
+    screen_height = 50
+    # screen_width = 40
+    # screen_height = 15
 
     tileset = tcod.tileset.load_tilesheet(
         "dejavu10x10_gs_tc.png", 32, 8, tcod.tileset.CHARMAP_TCOD
     )
-
-    # player_x: int = screen_width // 2
-    # player_y: int = screen_height // 2
     
     player_x = int(screen_width / 2)
     player_y = int(screen_height / 2)
@@ -30,7 +27,7 @@ def main():
         while True:
             root_console.clear()
             root_console.print(x=player_x, y=player_y, string="@", fg=(255, 255, 0))
-            print(root_console)
+            # print(root_console)
 
             context.present(root_console)
 
