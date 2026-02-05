@@ -10,15 +10,14 @@ class EventHandler(tcod.event.EventDispatch[Action]):
         action: Optional[Action] = None
 
         key = event.sym
-        print(f"\n\nkey : {key}\n\n")
 
         if key == tcod.event.KeySym.UP:
             action = MovementAction(dx=0, dy=-1)
         elif key == tcod.event.KeySym.DOWN:
             action = MovementAction(dx=0, dy=1)
-        elif key == tcod.event.K_RIGHT:
+        elif key == tcod.event.KeySym.RIGHT:
             action = MovementAction(dx=1, dy=0)
-        elif key == tcod.event.K_LEFT:
+        elif key == tcod.event.KeySym.LEFT:
             action = MovementAction(dx=-1, dy=0)
 
         elif key == tcod.event.KeySym.ESCAPE:
